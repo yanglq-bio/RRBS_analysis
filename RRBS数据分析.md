@@ -415,11 +415,11 @@ done
 
 或者也可以使用这个python脚本
 
-[E:\学习笔记\数据分析\RRBS甲基化测序\bismark_results_handle.py]()
+bismark_results_handle.py
 
 ## 8.2 合并所有文件
 
-[E:\学习笔记\数据分析\RRBS甲基化测序\rrbs_met_merge.py]()
+rrbs_met_merge.py
 
 合并之后文件格式如下：
 
@@ -434,11 +434,12 @@ chr1 ,10471,10471,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 
 ①每个位点的深度至少为5
 
-[E:\学习笔记\数据分析\RRBS甲基化测序\prefilter_by_depth.py]()
+prefilter_by_depth.py
 
 ②先将每一对N-T样本合并，如果某一个位点在N-T中都测到，则保留
 
 之后再将所有样本合并
+paired_merge_filter.py
 
 ## 8.3 过滤(找差异甲基化位点)
 
@@ -450,7 +451,7 @@ chr1 ,10471,10471,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 
 按上述两个条件过滤之后，对每个位点做wilcoxon test，并筛选p≤0.05的位点，及差异甲基化位点（DMP）
 
-[E:\学习笔记\数据分析\RRBS甲基化测序\wilcoxon_test.py]()
+wilcoxon_test.py
 
 
 
